@@ -10,7 +10,7 @@
     float: right;
 }
 button:hover {
-    background-color:darkorange;
+    background-color:sienna;
     cursor:pointer;
 }
 .logo{
@@ -29,7 +29,7 @@ h4{
     margin-inline: 15%;
     text-align: center;
     width: 70%;
-    height: 170px;
+    height: 225px;
     border-width: thick;
     border-color:darkgoldenrod;
     border-style: solid;
@@ -45,11 +45,13 @@ table{
 }
 td{
     width: 25%;
+    height: 30px;
    text-align: left;
    border: 2px solid #000;
    border-spacing: 0;
 }
 .table{
+    margin-top: 9px;
     font-family: cursive;
     margin-left: 9px;
     float: left;
@@ -69,5 +71,36 @@ td{
     margin-right: 10px;
 }
 body{
-    height: 800px;
+    height: 1000px;
+}
+.barra{
+    text-align: left;
+    width: 85%;
+    height: 40px;
+    margin-inline: 15%;
+}
+.bar{
+    background-color:darkgoldenrod;
+    font-family:cursive;
+    color: white;
+    border-color: black;
+    width: 130px;
+    height: 40px;
+    font-size:medium;
+    float: left;
+}
+#dash{
+    background-color:sienna;
+}
+p{
+    font-family: cursive;
+    margin-inline: 15%;
+}
+.user{
+    float: right;
+    margin-right: 50px;
+}
+#user{
+    float: right;
+    margin-right: 200px;
 }
