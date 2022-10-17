@@ -1,0 +1,120 @@
+.home{
+    background-color:darkgoldenrod;
+    font-family:cursive;
+    color: white;
+    border-radius: 20px;
+    border-color: white;
+    width: 130px;
+    height: 40px;
+    font-size:medium;
+    float: right;
+}
+button:hover {
+    background-color:sienna;
+    cursor:pointer;
+}
+.logo{
+    margin-inline: 15%;
+    font-family: cursive;
+}
+#logo{
+    margin-inline: 39%;
+}
+.barra{
+    text-align: left;
+    width: 85%;
+    height: 40px;
+    margin-inline: 15%;
+}
+.bar{
+    background-color:darkgoldenrod;
+    font-family:cursive;
+    color: white;
+    border-color: black;
+    width: 130px;
+    height: 40px;
+    font-size:medium;
+    float: left;
+}
+p{
+    font-family: cursive;
+    margin-inline: 15%;
+}
+.user{
+    float: right;
+    margin-right: 50px;
+}
+#user{
+    float: right;
+    margin-right: 200px;
+}
+#ride{
+    background-color: sienna;
+}
+body{
+    height: 1400px;
+}
+.div1{
+    margin-inline: 15%;
+    width: 70%;
+    height: auto;
+}
+#des{
+    width: 700px;
+    height: 200px;
+    text-align: center;
+    font-size: xx-large;
+    color: gray;
+
+}
+label{
+    font-family: cursive;
+}
+#Rname{
+    margin-top: 40px;
+}
+.div2{
+    margin-inline: 18%;
+    width: 70%;
+    height: 400px;
+}
+h3{
+    font-family: cursive;
+    margin-inline: 15%;
+}
+hr{
+    margin-top: 20px;
+    height: 1px;
+    margin-left: 6%;
+    margin-right: 6%;
+    background-color: darkgoldenrod;
+}
+.div3{
+    margin-top: 20px;
+    width: 40%;
+    float: left;
+    text-align: left;
+    margin-left: 36px;
+    height: 200px;
+}
+h4{
+    font-family: cursive;
+}
+.cancel{
+    float: left;
+    margin-left: 11%;
+    margin-top: 100px;
+}
+.save{
+    background-color:green;
+    font-family:cursive;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    width: 130px;
+    height: 40px;
+    font-size:medium;
+    float: right;
+    margin-right: 46%;
+    margin-top: 90px;
+}
