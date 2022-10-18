@@ -62,7 +62,7 @@ body{
 #des{
     width: 700px;
     height: 200px;
-    text-align: center;
+    text-align: left;
     font-size: xx-large;
     color: gray;
 
@@ -117,4 +117,7 @@ h4{
     float: right;
     margin-right: 46%;
     margin-top: 90px;
+}
+.dat{
+    width: 220px;
 }
