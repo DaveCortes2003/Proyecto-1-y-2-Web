@@ -14,8 +14,8 @@
     border-style: solid;
 }
 input{
-    width: 300px;
-    margin-left: 20px;
+    width: 80%;
+    margin-left: 5%;
     text-align: left;
 }
 label{
@@ -35,8 +35,8 @@ button:hover {
     color: white;
     border-radius: 20px;
     border-color: white;
-    width: 130px;
-    height: 40px;
+    width: 40%;
+    height: 20%;
     font-size:medium;
 
 }
