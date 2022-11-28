@@ -12,6 +12,7 @@ function saveUser() {
         const pass = document.getElementById('pass').value;
         const Rpass = document.getElementById('Rpass').value;
         const description = '';
+        const speed = '';
         // add it to the database
 
         const user = {
@@ -21,7 +22,8 @@ function saveUser() {
             username,
             pass,
             Rpass,
-            description
+            description,
+            speed
         };
         user.name=name;
         user.lastName=lastName;
@@ -30,6 +32,7 @@ function saveUser() {
         user.pass=pass;
         user.Rpass=Rpass;
         user.description=description;
+        user.speed=speed;
 
         let users = JSON.parse(localStorage.getItem(userKey));
 
