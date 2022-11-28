@@ -10,9 +10,8 @@ function saveUser() {
         const cellphone = document.getElementById('phone').value;
         const username = document.getElementById('Username').value;
         const pass = document.getElementById('pass').value;
-        const Rpass = document.getElementById('Rpass').value;
         const description = '';
-        const speed = '';
+        const speed = '60 km/h';
         // add it to the database
 
         const user = {
@@ -21,7 +20,6 @@ function saveUser() {
             cellphone,
             username,
             pass,
-            Rpass,
             description,
             speed
         };
@@ -30,7 +28,6 @@ function saveUser() {
         user.cellphone=cellphone;
         user.username=username;
         user.pass=pass;
-        user.Rpass=Rpass;
         user.description=description;
         user.speed=speed;
 

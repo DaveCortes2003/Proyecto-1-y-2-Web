@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="/proyecto2/css/settings.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
         <button class="home" onclick="location.href='/proyecto2/html/dashboard.html'">Back</button>
@@ -17,26 +18,27 @@
             <button class="bar" onclick="location.href='/proyecto2/html/dashboard.html'">Rides</button>
             <button class="bar" id="set">Settings</button>
             <img src="/proyecto2/images/user.png" id="user" width="100px">
-            <p class="user">Welcome barroyo</p>
+            <p class="user" id="text-name">Welcome barroyo</p>
         </div>
         <header><h1 class="logo">Settings</h1></header>
         <p><a href="/proyecto2/html/dashboard.html">Dashboard</a> > Settings</p>
         <div class="div1">  
             <label for="name">Full Name</label>
             <br/>
-            <input type="text" id="name" name="Name" value="Bladimir Arroyo" class="text"/>
+            <input type="text" id="name" name="Name"  class="text" readonly/>
             <br/>
             <label for="pass">Speed Average</label>
             <br/>
-            <input type="text" id="pass" name="Name" value="60 km/h" class="text"/>
+            <input type="text" id="speed" name="Name" class="text"/>
             <br>
             <br>
             <label for="des">About me</label>
             <br/>
-            <textarea name="des" id="des" cols="30" rows="10">Something about me goes here</textarea>
+            <textarea name="des" id="des" cols="30" rows="10" placeholder="Something about me goes here"></textarea>
             <br>
             <a href="/proyecto2/html/dashboard.html" class="cancel">Cancel</a>
             <button class="save" onclick="location.href='/proyecto2/html/dashboard.html'">Save</button>
         </div>
+        <script src="/proyecto2/js/settings.js" type="text/javascript"></script>
     </body>
 </html>

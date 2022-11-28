@@ -14,7 +14,7 @@ function verificar() {
 
     users.forEach((user)=>{
         if(user.username == username && user.pass == pass){
-            dataUser(user.name,user.lastName,user.cellphone,user.username,user.pass);
+            dataUser(user.name,user.lastName,user.cellphone,user.username,user.pass,user.description,user.speed);
             v=true;
         }
     });
@@ -25,25 +25,31 @@ function verificar() {
         window.location.href = '/proyecto2/html/dashboard.html';
     }
 }
-function dataUser(na,ln,cp,un,pa){
+function dataUser(na,ln,cp,un,pa,des,sp){
     const name = na;
     const lastName = ln;
     const cellphone = cp;
     const username = un;
     const pass = pa;
+    const description = des;
+    const speed = sp;
 
     const user = {
         name,
         lastName,
         cellphone,
         username,
-        pass
+        pass,
+        description,
+        speed
     };
     user.name=name;
     user.lastName=lastName;
     user.cellphone=cellphone;
     user.username=username;
     user.pass=pass;
+    user.description=description;
+    user.speed=speed;
 
     let users = [];
 

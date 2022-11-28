@@ -70,9 +70,9 @@ label{
 #des{
     width: 700px;
     height: 200px;
-    text-align: center;
-    font-size: xx-large;
-    color: gray;
+    text-align: left;
+    font-size: large;
+    color: black;
 
 }
 .cancel{
