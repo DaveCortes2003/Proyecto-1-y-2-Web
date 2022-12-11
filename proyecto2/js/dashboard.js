@@ -8,7 +8,7 @@ function loadValues() {
   document.getElementById('text-name').textContent = 'Welcome  ' + userData[0].username;
 
 }
-loadValues();
+
 
 function showListOfRides() {
   const rides = JSON.parse(localStorage.getItem(ridesKey));
@@ -30,11 +30,11 @@ function showListOfRides() {
     table.innerHTML = rows;
   }
 }
-function viewRide(id){
+function viewRide(id) {
   dataRide(id);
   window.location.href = '/proyecto2/html/verRides.html';
 }
-function editRide(id){
+function editRide(id) {
   dataRide(id);
   window.location.href = '/proyecto2/html/editRide.html';
 }
@@ -59,7 +59,7 @@ function deleteRide(a) {
 }
 
 function dataRide(identification) {
-  let id, Rname, start, end, departure, arrival, description, username,days;
+  let id, Rname, start, end, departure, arrival, description, username, days;
   const listRides = JSON.parse(localStorage.getItem(ridesKey));
 
   listRides.forEach((ride) => {
@@ -106,19 +106,31 @@ function dataRide(identification) {
 
 }
 
-showListOfRides();
+function verifyLogin() {
+  let regisUser = JSON.parse(localStorage.getItem('userData'));
+
+  if (!regisUser) {
+    window.alert("Primero debe de hacer el login");
+    window.location.href = '/proyecto2/html/login.html';
+  }
+  else {
+    loadValues();
+    showListOfRides();
+  }
+}
+verifyLogin();
 
 function bindEvents() {
-	jQuery('#back-button').bind('click', function (element) {
-		window.location.href = '/proyecto2/html/login.html';
-	});
+  jQuery('#back-button').bind('click', function (element) {
+    window.location.href = '/proyecto2/html/login.html';
+  });
 
-    jQuery('#add-ride-button').bind('click', function (element) {
-		window.location.href = '/proyecto2/html/addRide.html';
-	});
+  jQuery('#add-ride-button').bind('click', function (element) {
+    window.location.href = '/proyecto2/html/addRide.html';
+  });
 
   jQuery('#button-settings').bind('click', function (element) {
-		window.location.href = '/proyecto2/html/settings.html';
-	});
+    window.location.href = '/proyecto2/html/settings.html';
+  });
 }
 bindEvents();

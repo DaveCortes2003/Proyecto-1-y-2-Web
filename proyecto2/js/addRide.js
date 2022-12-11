@@ -53,7 +53,7 @@ function saveRide() {
 
 
     localStorage.setItem(rideKey, JSON.stringify(rides));
-    
+
 
 }
 
@@ -133,11 +133,20 @@ function rideTime() {
     return l;
 
 }
+function verifyLogin() {
+    let regisUser = JSON.parse(localStorage.getItem('userData'));
+
+    if (!regisUser) {
+        window.alert("Primero debe de hacer el login");
+        window.location.href = '/proyecto2/html/login.html';
+    }
+}
+verifyLogin();
 
 function bindEvents() {
     jQuery('#button-save').bind('click', function (element) {
         verificar();
-        days=[];
+        days = [];
     });
 
     jQuery('#dash-button').bind('click', function (element) {

@@ -14,7 +14,7 @@ function loadValues() {
     document.getElementById('des').value = description;
 
 }
-loadValues();
+
 
 function extractValuesUser() {
     let userData = JSON.parse(localStorage.getItem(userDataKey));
@@ -74,15 +74,15 @@ function saveListUsers() {
 
     let users = JSON.parse(localStorage.getItem(userKey));
 
-    users.forEach((user,index)=>{
-        if(user.username == username){
+    users.forEach((user, index) => {
+        if (user.username == username) {
             delete users[index];
         }
     });
-    
+
     users.push(user);
 
-    localStorage.setItem(userKey, JSON.stringify(users.filter(user=>user !=null)));
+    localStorage.setItem(userKey, JSON.stringify(users.filter(user => user != null)));
 
 }
 
@@ -92,6 +92,19 @@ function saveValuesUser() {
     dataUser();
     saveListUsers();
 }
+
+function verifyLogin() {
+    let regisUser = JSON.parse(localStorage.getItem('userData'));
+
+    if (!regisUser) {
+        window.alert("Primero debe de hacer el login");
+        window.location.href = '/proyecto2/html/login.html';
+    }
+    else {
+        loadValues();
+    }
+}
+verifyLogin();
 
 
 function bindEvents() {

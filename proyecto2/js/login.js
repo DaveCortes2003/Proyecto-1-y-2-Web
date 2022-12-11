@@ -60,6 +60,7 @@ function dataUser(na,ln,cp,un,pa,des,sp){
 }
 
 function bindEvents() {
+    localStorage.removeItem(userDataKey);
 	jQuery('#login-button').bind('click', function (element) {
 		verificar();
 	});

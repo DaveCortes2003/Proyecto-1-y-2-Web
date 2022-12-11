@@ -17,7 +17,19 @@ function loadValues() {
 
 }
 
-loadValues();
+function verifyLogin(){
+    let regisUser = JSON.parse(localStorage.getItem('userData'));
+
+    if (!regisUser) {
+        window.alert("Primero debe de hacer el login");
+        window.location.href = '/proyecto2/html/login.html';
+    }
+    else{
+        loadValues();
+    }
+}
+verifyLogin();
+
 
 function bindEvents() {
     jQuery('#button-save').bind('click', function (element) {

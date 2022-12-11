@@ -21,7 +21,7 @@ function loadValues() {
 
 }
 
-loadValues();
+
 
 function saveRide() {
 
@@ -152,13 +152,24 @@ function rideTime() {
 }
 
 
+function verifyLogin() {
+    let regisUser = JSON.parse(localStorage.getItem('userData'));
 
+    if (!regisUser) {
+        window.alert("Primero debe de hacer el login");
+        window.location.href = '/proyecto2/html/login.html';
+    }
+    else {
+        loadValues();
+    }
+}
+verifyLogin();
 
 
 function bindEvents() {
     jQuery('#button-save').bind('click', function (element) {
         verificar();
-        days=[];
+        days = [];
     });
 
     jQuery('#dash-button').bind('click', function (element) {
