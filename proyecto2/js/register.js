@@ -5,7 +5,7 @@ function saveUser() {
     let valor=verificar();
 	
     if(valor == true){
-        const name = document.getElementById('name').value;
+        const fname = document.getElementById('name').value;
         const lastName = document.getElementById('Lname').value;
         const cellphone = document.getElementById('phone').value;
         const username = document.getElementById('Username').value;
@@ -15,7 +15,7 @@ function saveUser() {
         // add it to the database
 
         const user = {
-            name,
+            fname,
             lastName,
             cellphone,
             username,
@@ -23,7 +23,7 @@ function saveUser() {
             description,
             speed
         };
-        user.name=name;
+        user.fname=fname;
         user.lastName=lastName;
         user.cellphone=cellphone;
         user.username=username;
@@ -49,7 +49,7 @@ function saveUser() {
 }
 function verificar(){
     let l =false;
-    const name = document.getElementById('name').value;
+    const fname = document.getElementById('name').value;
 	const lastName = document.getElementById('Lname').value;
     const cellphone = document.getElementById('phone').value;
     const username = document.getElementById('Username').value;
@@ -62,7 +62,7 @@ function verificar(){
         users = [];
     }
 
-    if(name=='' || lastName=='' || cellphone=='' || username=='' || pass=='' || Rpass==''){
+    if(fname=='' || lastName=='' || cellphone=='' || username=='' || pass=='' || Rpass==''){
         window.alert("Por favor llene todos los espacios");
     }
     if(pass != Rpass){

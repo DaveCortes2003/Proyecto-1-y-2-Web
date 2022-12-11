@@ -14,7 +14,7 @@ function verificar() {
 
     users.forEach((user)=>{
         if(user.username == username && user.pass == pass){
-            dataUser(user.name,user.lastName,user.cellphone,user.username,user.pass,user.description,user.speed);
+            dataUser(user.fname,user.lastName,user.cellphone,user.username,user.pass,user.description,user.speed);
             v=true;
         }
     });
@@ -26,7 +26,7 @@ function verificar() {
     }
 }
 function dataUser(na,ln,cp,un,pa,des,sp){
-    const name = na;
+    const fname = na;
     const lastName = ln;
     const cellphone = cp;
     const username = un;
@@ -35,7 +35,7 @@ function dataUser(na,ln,cp,un,pa,des,sp){
     const speed = sp;
 
     const user = {
-        name,
+        fname,
         lastName,
         cellphone,
         username,
@@ -43,7 +43,7 @@ function dataUser(na,ln,cp,un,pa,des,sp){
         description,
         speed
     };
-    user.name=name;
+    user.fname=fname;
     user.lastName=lastName;
     user.cellphone=cellphone;
     user.username=username;
