@@ -2,9 +2,9 @@
 const userKey = 'users';
 function saveUser() {
 
-    let valor=verificar();
-	
-    if(valor == true){
+    let valor = verificar();
+
+    if (valor == true) {
         const fname = document.getElementById('name').value;
         const lastName = document.getElementById('Lname').value;
         const cellphone = document.getElementById('phone').value;
@@ -23,13 +23,13 @@ function saveUser() {
             description,
             speed
         };
-        user.fname=fname;
-        user.lastName=lastName;
-        user.cellphone=cellphone;
-        user.username=username;
-        user.pass=pass;
-        user.description=description;
-        user.speed=speed;
+        user.fname = fname;
+        user.lastName = lastName;
+        user.cellphone = cellphone;
+        user.username = username;
+        user.pass = pass;
+        user.description = description;
+        user.speed = speed;
 
         let users = JSON.parse(localStorage.getItem(userKey));
 
@@ -47,10 +47,10 @@ function saveUser() {
         window.location.href = '/proyecto2/html/login.html';
     }
 }
-function verificar(){
-    let l =false;
+function verificar() {
+    let l = false;
     const fname = document.getElementById('name').value;
-	const lastName = document.getElementById('Lname').value;
+    const lastName = document.getElementById('Lname').value;
     const cellphone = document.getElementById('phone').value;
     const username = document.getElementById('Username').value;
     const pass = document.getElementById('pass').value;
@@ -58,23 +58,24 @@ function verificar(){
 
     let users = JSON.parse(localStorage.getItem(userKey));
 
-    if (!users) {
-        users = [];
-    }
 
-    if(fname=='' || lastName=='' || cellphone=='' || username=='' || pass=='' || Rpass==''){
+
+    if (fname == '' || lastName == '' || cellphone == '' || username == '' || pass == '' || Rpass == '') {
         window.alert("Por favor llene todos los espacios");
     }
-    if(pass != Rpass){
+    else if (pass != Rpass) {
         window.alert("Las contraseñas no coinciden");
     }
 
-    else{
-        l=true;
-        users.forEach((user)=>{
-            if(user.username == username){
+    else {
+        if (!users) {
+            users = [];
+        }
+        l = true;
+        users.forEach((user) => {
+            if (user.username == username) {
                 window.alert("El username ya existe");
-                l=false;
+                l = false;
             }
         });
     }
@@ -83,12 +84,12 @@ function verificar(){
 }
 
 function clearFields() {
-	document.getElementById('name').value = '';
-	document.getElementById('Lname').value = '';
-	document.getElementById('phone').value = '';
+    document.getElementById('name').value = '';
+    document.getElementById('Lname').value = '';
+    document.getElementById('phone').value = '';
     document.getElementById('Username').value = '';
-	document.getElementById('pass').value = '';
-	document.getElementById('Rpass').value = '';
+    document.getElementById('pass').value = '';
+    document.getElementById('Rpass').value = '';
 }
 
 
@@ -97,8 +98,12 @@ function clearFields() {
  * Binds the different events to the different elements of the page
  */
 function bindEvents() {
-	jQuery('#save-user-button').bind('click', function (element) {
-		saveUser();
-	});
+    jQuery('#save-user-button').bind('click', function (element) {
+        saveUser();
+    });
+
+    jQuery('#button-home').bind('click', function (element) {
+        window.location.href = '/proyecto2/html/index.html';
+    });
 }
 bindEvents();

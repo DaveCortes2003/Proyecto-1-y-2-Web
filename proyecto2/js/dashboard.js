@@ -107,3 +107,18 @@ function dataRide(identification) {
 }
 
 showListOfRides();
+
+function bindEvents() {
+	jQuery('#back-button').bind('click', function (element) {
+		window.location.href = '/proyecto2/html/login.html';
+	});
+
+    jQuery('#add-ride-button').bind('click', function (element) {
+		window.location.href = '/proyecto2/html/addRide.html';
+	});
+
+  jQuery('#button-settings').bind('click', function (element) {
+		window.location.href = '/proyecto2/html/settings.html';
+	});
+}
+bindEvents();

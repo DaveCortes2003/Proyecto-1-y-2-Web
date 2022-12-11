@@ -9,7 +9,7 @@
     <title>TicoRides/inicio</title>
 </head>
 <body>
-    <button class="login" onclick="location.href='/proyecto2/html/login.html'">Login</button>
+    <button class="login" id="button-login">Login</button>
     <br>
     <img src="/proyecto2/images/logo_principal.jpeg" width="200px" id="logo">
     <header><h1 class="logo">Welcome</h1></header>
@@ -18,15 +18,15 @@
         <div class="div1">  
             <label for="From">From</label>
             &nbsp;
-            <input type="text" id="From" name="Name" />
+            <input type="text" id="from" name="Name" />
             &nbsp;
             <label for="To">To</label>
             &nbsp;
-            <input type="text" id="To" name="Name" />
+            <input type="text" id="to" name="Name" />
             &nbsp;
             &nbsp;
             &nbsp;
-            <button class="findRide">Find my Ride!</button>
+            <button class="findRide" id="find-ride">Find my Ride!</button>
         </div>
         <h4>Results for rides that matches your criteria:</h4>
         <div class="div2">
@@ -37,24 +37,8 @@
                     <td>End</td>
                     <td></td>
                 </tr>
-                <tr>
-                    <td>barroyo</td>
-                    <td>Barrio los Angeles</td>
-                    <td>Ciudad Quesada</td>
-                    <td>View</td>
-                </tr>
-                <tr>
-                    <td>barroyo</td>
-                    <td>Ciudad Quesada</td>
-                    <td>Los Angeles</td>
-                    <td>View</td>
-                </tr>
-                <tr>
-                    <td>yluna</td>
-                    <td>Ciudad Quesada</td>
-                    <td>San Pedro</td>
-                    <td>View</td>
-                </tr>
+                <tbody id="rides_table">
+                </tbody>
             </table>
         </div>
     </section>

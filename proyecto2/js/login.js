@@ -63,5 +63,9 @@ function bindEvents() {
 	jQuery('#login-button').bind('click', function (element) {
 		verificar();
 	});
+
+    jQuery('#button-home').bind('click', function (element) {
+		window.location.href = '/proyecto2/html/index.html';
+	});
 }
 bindEvents();

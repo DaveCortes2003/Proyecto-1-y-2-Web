@@ -3,7 +3,6 @@ const rideDataKey = 'rideData';
 const rideData = JSON.parse(localStorage.getItem(rideDataKey));
 
 function loadValues() {
-    document.getElementById('text-name').textContent = 'Welcome  ' + rideData[0].username;
     document.getElementById('Rname').value = rideData[0].Rname;
     document.getElementById('start').value = rideData[0].start;
     document.getElementById('end').value = rideData[0].end;
@@ -20,20 +19,16 @@ function loadValues() {
 loadValues();
 
 function bindEvents() {
-    jQuery('#button-save').bind('click', function (element) {
-        window.location.href = '/proyecto2/html/dashboard.html';
+    jQuery('#find-ride').bind('click', function (element) {
+        showListOfRides();
     });
-
-    jQuery('#dash-button').bind('click', function (element) {
-        window.location.href = '/proyecto2/html/dashboard.html';
-    });
-
-    jQuery('#settings-button').bind('click', function (element) {
-        window.location.href = '/proyecto2/html/settings.html';
-    });
-
     jQuery('#button-back').bind('click', function (element) {
-        window.location.href = '/proyecto2/html/dashboard.html';
+        window.location.href = '/proyecto2/html/index.html';
     });
+    jQuery('#button-ok').bind('click', function (element) {
+        window.location.href = '/proyecto2/html/index.html';
+    });
+
 }
 bindEvents();
+

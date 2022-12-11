@@ -160,5 +160,17 @@ function bindEvents() {
         verificar();
         days=[];
     });
+
+    jQuery('#dash-button').bind('click', function (element) {
+        window.location.href = '/proyecto2/html/dashboard.html';
+    });
+
+    jQuery('#settings-button').bind('click', function (element) {
+        window.location.href = '/proyecto2/html/settings.html';
+    });
+
+    jQuery('#button-back').bind('click', function (element) {
+        window.location.href = '/proyecto2/html/dashboard.html';
+    });
 }
 bindEvents();
