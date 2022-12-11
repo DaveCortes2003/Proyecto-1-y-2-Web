@@ -9,7 +9,7 @@ function showListOfRides() {
       let rows = "";
       rides.forEach((ride) => {
         let row = `<tr>`;
-        row += `<td>${ride.name}</td>`;
+        row += `<td>${ride.Rname}</td>`;
         row += `<td>${ride.start}</td>`;
         row += `<td>${ride.end}</td>`;
         row += `<td> <a onclick="viewRide(${ride.id})" class="link view" href="#">View</a>  | <a onclick="editRide(${ride.id})" class="link edit" href="#">Edit</a>  |  <a  onclick="deleteRide(${ride.id});" class="delete" href="#">Delete</a>  </td>`;
