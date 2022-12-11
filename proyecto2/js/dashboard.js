@@ -53,7 +53,7 @@ function deleteRide(a) {
 
   delete rides[indice];
 
-  localStorage.setItem(ridesKey, JSON.stringify(rides.filter(book => book != null)));
+  localStorage.setItem(ridesKey, JSON.stringify(rides.filter(ride => ride != null)));
   console.log(JSON.parse(localStorage.getItem(ridesKey)));
   window.location.href = '/proyecto2/html/dashboard.html';
 }

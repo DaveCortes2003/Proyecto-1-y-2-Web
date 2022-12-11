@@ -137,6 +137,7 @@ function rideTime() {
 function bindEvents() {
     jQuery('#button-save').bind('click', function (element) {
         verificar();
+        days=[];
     });
 }
 bindEvents();
