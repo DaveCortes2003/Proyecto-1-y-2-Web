@@ -53,6 +53,7 @@ function saveRide() {
 
 
     localStorage.setItem(rideKey, JSON.stringify(rides));
+    
 
 }
 
@@ -80,6 +81,7 @@ function verificar() {
 
     else {
         saveRide();
+        window.location.href = '/proyecto2/html/addRide.html';
     }
 
 }
@@ -87,31 +89,31 @@ function verificar() {
 function selectDays() {
     let counter = false;
     if (document.getElementById('monday').checked) {
-        days.push('monday');
+        days.push("monday");
         counter = true;
     }
     if (document.getElementById('tuesday').checked) {
-        days.push('tuesday');
+        days.push("tuesday");
         counter = true;
     }
     if (document.getElementById('wednesday').checked) {
-        days.push('wednesday');
+        days.push("wednesday");
         counter = true;
     }
     if (document.getElementById('thursday').checked) {
-        days.push('thursday');
+        days.push("thursday");
         counter = true;
     }
     if (document.getElementById('friday').checked) {
-        days.push('friday');
+        days.push("friday");
         counter = true;
     }
     if (document.getElementById('saturday').checked) {
-        days.push('saturday');
+        days.push("saturday");
         counter = true;
     }
     if (document.getElementById('sunday').checked) {
-        days.push('sunday');
+        days.push("sunday");
         counter = true;
     }
 
