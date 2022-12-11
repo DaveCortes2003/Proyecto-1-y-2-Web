@@ -34,6 +34,11 @@ function viewRide(id){
   dataRide(id);
   window.location.href = '/proyecto2/html/verRides.html';
 }
+function editRide(id){
+  dataRide(id);
+  window.location.href = '/proyecto2/html/editRide.html';
+}
+
 
 function deleteRide(a) {
   let indice = 0;
