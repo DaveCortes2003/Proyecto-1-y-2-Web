@@ -23,7 +23,13 @@ function saveRide() {
     }
 
     else {
-        id = rides[rides.length - 1].id + 1
+        if(rides.length == 0){
+           id=1; 
+        }
+        else{
+            id = rides[rides.length - 1].id + 1
+        }
+        
     }
     const ride = {
         Rname,
