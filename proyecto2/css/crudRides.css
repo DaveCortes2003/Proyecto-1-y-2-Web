@@ -1,106 +1,125 @@
-.home{
+.home {
     background-color:darkgoldenrod;
     font-family:cursive;
     color: white;
     border-radius: 20px;
     border-color: white;
-    width: 130px;
-    height: 40px;
-    font-size:medium;
+    width: 18%;
+    height: 35px;
+    font-size: 90%;
     float: right;
 }
+
 button:hover {
-    background-color:sienna;
-    cursor:pointer;
+    background-color: sienna;
+    cursor: pointer;
 }
-.logo{
+
+.logo {
     margin-inline: 15%;
     font-family: cursive;
+    font-size: 150%;
+    clear: both;
 }
-#logo{
+
+#logo {
     margin-inline: 39%;
+    text-align: center;
+    width: 25%;
 }
-.barra{
+
+.barra {
     text-align: left;
-    width: 85%;
-    height: 40px;
+    width: 100%;
     margin-inline: 15%;
 }
-.bar{
-    background-color:darkgoldenrod;
-    font-family:cursive;
+
+.bar {
+    background-color: darkgoldenrod;
+    font-family: cursive;
     color: white;
     border-color: black;
-    width: 130px;
-    height: 40px;
-    font-size:medium;
+    width: 80px;
+    height: 35px;
+    font-size: 80%;
     float: left;
 }
-p{
+
+p {
     font-family: cursive;
     margin-inline: 15%;
 }
-.user{
+
+.user {
+    width: 50%;
     float: right;
-    margin-right: 50px;
+    font-size: 10%;
 }
-#user{
+
+#user {
     float: right;
-    margin-right: 200px;
+    margin-right: 41%;
+    width: 8%;
 }
-#ride{
+
+#ride {
     background-color: sienna;
 }
-.div1{
+
+.div1 {
     margin-inline: 15%;
     width: 70%;
     height: auto;
 }
-#des{
-    width: 700px;
+
+#des {
+    width: 100%;
     height: 200px;
     text-align: left;
     font-size: large;
     color: black;
 
 }
-label{
+
+label {
+    font-size: 90%;
     font-family: cursive;
 }
-#Rname{
-    margin-top: 40px;
-}
-.div2{
+.div2 {
     margin-inline: 18%;
     width: 70%;
-    height: 400px;
 }
-h3{
+
+h3 {
     font-family: cursive;
     margin-inline: 15%;
 }
-hr{
+
+hr {
     margin-top: 20px;
     height: 1px;
     margin-left: 6%;
     margin-right: 6%;
     background-color: darkgoldenrod;
 }
-.div3{
+
+.div3 {
     margin-top: 20px;
     width: 40%;
     float: left;
     text-align: left;
     margin-left: 36px;
-    height: 200px;
 }
-h4{
+
+h4 {
     font-family: cursive;
 }
+
 .cancel{
     float: left;
-    margin-left: 11%;
-    margin-top: 100px;
+    margin-left: 20%;
+    margin-top: 12%;
+    width: 15%;
 }
 .save{
     background-color:green;
@@ -108,13 +127,38 @@ h4{
     color: white;
     border-radius: 10px;
     border-color: white;
-    width: 130px;
-    height: 40px;
+    width: 80px;
+    height: 35px;
     font-size:medium;
     float: right;
-    margin-right: 46%;
-    margin-top: 90px;
+    margin-right: 20%;
+    margin-top: 11%;
 }
-.dat{
-    width: 220px;
+
+#text-name {
+    font-size: 100%;
+    float: right;
+    margin-right: 8%;
+}
+
+.dat {
+    font-family: cursive;
+    width: 30%;
+    height: 30px;
+}
+
+.divUser {
+    width: 50%;
+    float: right;
+    text-align: left;
+}
+
+.divBar {
+    width: 50%;
+}
+
+.divSave {
+    clear: both;
+    width: 100%;
+    height: 300px;
 }

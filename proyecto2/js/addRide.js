@@ -1,6 +1,7 @@
 'use strict';
 const rideKey = 'rides';
 const userDataKey = 'userData';
+const rideDataKey = 'rideData';
 let days = [];
 function saveRide() {
 
@@ -56,7 +57,10 @@ function saveRide() {
 
 
 }
-
+function loadValues() {
+    const rideData = JSON.parse(localStorage.getItem(rideDataKey));
+    document.getElementById('text-name').textContent = 'Welcome  ' + rideData[0].username;
+}
 function verificar() {
     let time = rideTime();
     let day = selectDays();
@@ -139,6 +143,9 @@ function verifyLogin() {
     if (!regisUser) {
         window.alert("Primero debe de hacer el login");
         window.location.href = '/proyecto2/html/login.html';
+    }
+    else{
+        loadValues();
     }
 }
 verifyLogin();

@@ -17,11 +17,14 @@
     <br>
     <br>
     <div class="barra">
-        <button class="bar" id="dash-button">Dashboard</button>
-        <button class="bar" id="ride">Rides</button>
-        <button class="bar" id="settings-button">Settings</button>
-        <img src="/proyecto2/images/user.png" id="user" width="100px" alt="">
-        <p class="user">Welcome barroyo</p>
+        <div class="divBar">
+            <button class="bar" id="dash-button">Dashboard</button>
+            <button class="bar" id="ride-button">Rides</button>
+            <button class="bar" id="set">Settings</button>
+        </div>
+        <div class="divUser"><img src="/proyecto2/images/user.png" id="user">
+            <p class="user" id="text-name">Welcome</p>
+        </div>
     </div>
     <header>
         <h1 class="logo">Rides</h1>
@@ -31,22 +34,19 @@
     <section>
         <div class="div1">
             <label for="Rname">Ride Name</label>
-            &nbsp;
+            <br>
             <input class="dat" type="text" id="Rname" name="Name" />
             <br>
-            <br>
             <label for="start">Start From</label>
-            &nbsp;
+            <br>
             <input class="dat" type="text" id="start" name="Name" />
-            &nbsp;
-            &nbsp;
+            <br>
             <label for="End">End</label>
-            &nbsp;
+            <br>
             <input class="dat" type="text" id="end" name="Name" />
             <br>
-            <br>
             <label for="des">Description</label>
-            <br />
+            <br>
             <textarea name="des" id="des" cols="30" rows="10" placeholder="Something about me goes here"></textarea>
         </div>
         <br>
@@ -80,6 +80,8 @@
                 <br>
                 <label><input type="checkbox" id="sunday" name="Name" /> Sunday</label>
             </div>
+        </div>
+        <div class="divSave">
             <a href="/proyecto2/html/dashboard.html" class="cancel">Cancel</a>
             <button class="save" id="button-save">Save</button>
         </div>
