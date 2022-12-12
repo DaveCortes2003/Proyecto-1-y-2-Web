@@ -58,8 +58,8 @@ function saveRide() {
 
 }
 function loadValues() {
-    const rideData = JSON.parse(localStorage.getItem(rideDataKey));
-    document.getElementById('text-name').textContent = 'Welcome  ' + rideData[0].username;
+    const userData = JSON.parse(localStorage.getItem(userDataKey));
+    document.getElementById('text-name').textContent = 'Welcome  ' + userData[0].username;
 }
 function verificar() {
     let time = rideTime();
