@@ -6,8 +6,8 @@ const rideDataKey = 'rideData';
 let started, ended;
 
 function extractValues() {
-    started = document.getElementById('from').value;
-    ended = document.getElementById('to').value;
+    started = (document.getElementById('from').value).toLowerCase();
+    ended = (document.getElementById('to').value).toLowerCase();
 }
 
 function showListOfRides() {
@@ -19,7 +19,7 @@ function showListOfRides() {
     if (rides) {
         let rows = "";
         rides.forEach((ride) => {
-            if (started == ride.start && ended == ride.end) {
+            if (started == (ride.start).toLowerCase() && ended == (ride.end).toLowerCase()) {
                 let row = `<tr>`;
                 row += `<td>${ride.username}</td>`;
                 row += `<td>${ride.start}</td>`;
@@ -78,7 +78,6 @@ function dataRide(identification) {
     localStorage.setItem(rideDataKey, JSON.stringify(rides));
 
 }
-
 function viewRide(id) {
     dataRide(id);
     window.location.href = '/proyecto2/html/onlyReadRide.html';
