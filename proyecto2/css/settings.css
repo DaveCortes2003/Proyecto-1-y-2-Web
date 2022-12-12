@@ -4,9 +4,9 @@
     color: white;
     border-radius: 20px;
     border-color: white;
-    width: 130px;
-    height: 40px;
-    font-size:medium;
+    width: 18%;
+    height: 35px;
+    font-size: 90%;
     float: right;
 }
 button:hover {
@@ -16,14 +16,17 @@ button:hover {
 .logo{
     margin-inline: 15%;
     font-family: cursive;
+    font-size: 150%;
+    clear: both;
 }
 #logo{
     margin-inline: 39%;
+    text-align: center;
+    width: 25%;
 }
 .barra{
     text-align: left;
-    width: 85%;
-    height: 40px;
+    width: 100%;
     margin-inline: 15%;
 }
 .bar{
@@ -31,25 +34,25 @@ button:hover {
     font-family:cursive;
     color: white;
     border-color: black;
-    width: 130px;
-    height: 40px;
-    font-size:medium;
+    width: 80px;
+    height: 35px;
+    font-size:80%;
     float: left;
 }
 p{
     font-family: cursive;
     margin-inline: 15%;
+    font-size: 90%;
 }
 .user{
+    width: 50%;
     float: right;
-    margin-right: 50px;
+    font-size: 10%;
 }
 #user{
     float: right;
-    margin-right: 200px;
-}
-body{
-    height: 1200px;
+    margin-right: 41%;
+    width: 8%;
 }
 #set{
     background-color:sienna;
@@ -57,18 +60,18 @@ body{
 .div1{
     margin-inline: 15%;
     width: 70%;
-    height: 600px;
 }
 label{
     font-family: cursive;
+    font-size: 90%;
 }
 .text{
     font-family: cursive;
-    width: 200px;
+    width: 30%;
     height: 30px;
 }
 #des{
-    width: 700px;
+    width: 100%;
     height: 200px;
     text-align: left;
     font-size: large;
@@ -77,8 +80,9 @@ label{
 }
 .cancel{
     float: left;
-    margin-left: 11%;
-    margin-top: 100px;
+    margin-left: 20%;
+    margin-top: 12%;
+    width: 15%;
 }
 .save{
     background-color:green;
@@ -86,10 +90,26 @@ label{
     color: white;
     border-radius: 10px;
     border-color: white;
-    width: 130px;
-    height: 40px;
+    width: 80px;
+    height: 35px;
     font-size:medium;
     float: right;
-    margin-right: 27%;
-    margin-top: 90px;
+    margin-right: 20%;
+    margin-top: 11%;
+}
+#text-name{
+    font-size: 100%;
+    float: right;
+    margin-right: 8%;
+}
+.divUser{
+    width: 50%;
+    float:right;
+    text-align: left;
+}
+.divBar{
+    width: 50%;
+}
+.divSave{
+    width: 100%;
 }

@@ -110,6 +110,7 @@ verifyLogin();
 function bindEvents() {
     jQuery('#button-save').bind('click', function (element) {
         saveValuesUser();
+        window.location.href = '/proyecto2/html/dashboard.html';
     });
 
     jQuery('#dash-button').bind('click', function (element) {
