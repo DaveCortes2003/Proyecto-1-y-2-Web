@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="/proyecto2/css/login.css">
     <meta charset="UTF-8">
@@ -8,23 +9,30 @@
     <title>TicoRides/Login</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
     <button class="home" id="button-home">Home</button>
-    <img src="/proyecto2/images/logo_principal.jpeg" width="200px" id="logo">
-    <header><h1 class="logo">Login</h1></header>
-    <div class="div1">  
-        <label for="name">Username</label>
-        <br/>
-        <input type="text" id="username" name="Name" />
-        <br/>
-        <label for="pass">Password</label>
-        <br/>
-        <input type="password" id="pass" name="Name" />
-        <br/>
-        <p>Not an User? &nbsp; <a href="/proyecto2/html/register.html">Register Here</a></p>
-        <br>
-        <button class="login" id="login-button">Login</button>
+    <div class="pageHeader"><img src="/proyecto2/images/logo_principal.jpeg" id="logo">
+        <header>
+            <h1 class="logo">Welcome</h1>
+        </header>
+    </div>
+    <div class="div2">
+        <div class="div1">
+            <label for="name">Username</label>
+            <br />
+            <input type="text" id="username" name="Name" />
+            <br />
+            <label for="pass">Password</label>
+            <br />
+            <input type="password" id="pass" name="Name" />
+            <br />
+            <p>Not an User? &nbsp; <a href="/proyecto2/html/register.html">Register Here</a></p>
+            <br>
+            <button class="login" id="login-button">Login</button>
+        </div>
     </div>
     <script src="/proyecto2/js/login.js" type="text/javascript"></script>
 </body>
+
 </html>
