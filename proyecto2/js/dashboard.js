@@ -129,7 +129,7 @@ function bindEvents() {
     window.location.href = '/proyecto2/html/addRide.html';
   });
 
-  jQuery('#button-settings').bind('click', function (element) {
+  jQuery('#settings-button').bind('click', function (element) {
     window.location.href = '/proyecto2/html/settings.html';
   });
 }
