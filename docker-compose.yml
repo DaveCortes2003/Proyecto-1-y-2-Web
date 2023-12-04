@@ -1,0 +1,61 @@
+version: "3.1"
+services:
+
+  db:
+    image: mysql:latest
+    container_name: base_datos
+    restart: always
+    environment:
+      MYSQL_DATABASE: proyecto_docker
+      MYSQL_USER: Dave
+      MYSQL_PASSWORD: Admin12345
+      MYSQL_ROOT_PASSWORD: Admin12345
+    volumes:
+      - db:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress
+    restart: always
+    ports:
+      - 3000:80
+    depends_on:
+      - db
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: Dave
+      WORDPRESS_DB_PASSWORD: Admin12345
+      WORDPRESS_DB_NAME: proyecto_docker
+    volumes:
+      - wordpress:/var/www/html
+
+  adminer:
+    container_name: administradorBD
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  dokuwiki:
+    image: lscr.io/linuxserver/dokuwiki:latest
+    container_name: dokuwiki
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - /path/to/appdata/config:/config
+    ports:
+      - 80:80
+      - 443:443 #optional
+    restart: unless-stopped
+
+volumes:
+  db:
+  wordpress:
+  dokuwiki:
+
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-es
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es
